@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Service</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Create an Account</h2>
+            <form action="submit_form.php" method="POST">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="github">Github Username:</label>
+                    <input type="text" id="github" name="github">
+                </div>
+                <fieldset>
+                    <legend>Account Type</legend>
+                    <label><input type="radio" name="accountType" value="Enterprise"> Enterprise</label><br>
+                    <label><input type="radio" name="accountType" value="Pro"> Pro</label><br>
+                    <label><input type="radio" name="accountType" value="Free"> Free</label>
+                </fieldset>
+                <div>
+                    <label><input type="checkbox" name="rememberMe"> Remember Me</label>
+                </div>
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
